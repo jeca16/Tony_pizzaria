@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 32px 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::after{
+    position: absolute;
+    content: "";
+    display: block;
+    background: linear-gradient(0deg, #fff0 0%, var(--cor-principal) 158%);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    inset: 0;
+}
+
+header{
+    height: 20vh;
+    width: 90vw;
+}
+
+.entrada{
+    background-image: url(../img/foto.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 60px;
+}
+
+main{
+    height: 50vh;
+    width: 90vw;
+    background-color: red;
+}
+
+footer{
+    height: 30vh;
+    width: 90vw;
+    background-color:  green;
+}
