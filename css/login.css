@@ -25,12 +25,13 @@ header{
 }
 
 main{
-    height: 60vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 100px;
+    justify-content: space-evenly;
 }
 
 .login-informacoes{
@@ -46,12 +47,22 @@ main{
     width: 300px;
 }
 
+.inserir-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
 input{
-    height: 30px;
+    height: 50px;
+    width: 300px;
+    gap: 50px;
+    font-size: 16px;
+    line-height: 18.75px;
     padding-left: 32px;
     color: white;
     background-color: transparent;
-    border-bottom: solid white;
+    border-bottom: solid white 2px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -62,13 +73,49 @@ input{
     background-image: url(../img/email.webp);
     background-repeat: no-repeat;
     background-position: left;
+    background-size: 28px;
 }
 
 input::placeholder{
     color: white;
 }
 
+#senha{
+    background-image: url(../img/Lock.webp);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 29px;
+}
+
 footer{
     flex-grow: 1;
-    background-color: green;
+    justify-content: center;
+    align-items: center;
+    display: grid;
 }
+.entrar p{
+    height: 19px;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.criar-conta{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.criar-conta p{
+    color: white;
+}
+
+.criar-conta a{
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px black;
+}
+

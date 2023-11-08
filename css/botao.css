@@ -1,6 +1,17 @@
 .botao{
     width: 300px;
-    height: 55px;
+    height: 100px;
+    background-color: #ffff;
+    border: 0;
+    border-radius: 8px;
+    color: var(--cor-principal);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.botao-branco{
+    width: 260px;
+    height: 70px;
     background-color: #ffff;
     border: 0;
     border-radius: 8px;
