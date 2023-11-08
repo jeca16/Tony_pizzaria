@@ -1,12 +1,12 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding: 32px 24px;
     font-family: 'Roboto', sans-serif;
+    gap: 16px;
 }
 
-body::after{
+body::after {
     position: absolute;
     content: "";
     display: block;
@@ -17,26 +17,66 @@ body::after{
     inset: 0;
 }
 
-header{
-    height: 20vh;
-    width: 90vw;
+header {
+    padding: 32px 24px 0px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-.entrada{
-    background-image: url(../img/foto.webp);
+header img {
+    height: 60px;
+    width: 60px;
+}
+
+.titulo h2 {
+    color: white;
+    font-weight: 500;
+}
+
+.titulo p {
+    color: white;
+    font-weight: 400;
+}
+
+
+
+main {
+    height: 80vh;
+    width: 100vw;
+}
+
+.pesquisa{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius:15px;
+}
+
+#txtBusca{
+    background-image: url(../img/pesquisar.webp);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 60px;
+    background-position: calc(356px - 36px);
+    float:left;
+    border-radius:13px;
+    background-color:white;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:56px;
+    width:356px;
+  }
+
+.categorias p{
+    color: white;
+    font-weight: 400;
+    text-shadow: 2px 2px grey;
+    
 }
 
-main{
-    height: 50vh;
-    width: 90vw;
-    background-color: red;
-}
 
-footer{
-    height: 30vh;
-    width: 90vw;
-    background-color:  green;
+footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: green;
 }
