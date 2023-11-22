@@ -60,18 +60,47 @@ main {
     float:left;
     border-radius:13px;
     background-color:white;
-    font-style:italic;
-    font-size:18px;
+    font-style: reboto;
+    font-size:17px;
     border:none;
-    height:56px;
+    height:46px;
     width:356px;
+    outline: none;
   }
 
 .categorias p{
     color: white;
-    font-weight: 400;
-    text-shadow: 2px 2px grey;
-    
+    font-weight: 500;
+    text-shadow: 3px 2px grey;
+}
+
+.categoria{
+    width: 58px;
+    height: 58px;
+}
+
+.categoria1{
+    background-color: red;
+}
+
+.categoria2{
+    background-color: orangered;
+}
+
+.categoria3{
+    background-color: yellow;
+}
+
+.categoria4{
+    background-color: green;
+}
+
+.categoria5{
+    background-color: blue;   
+}
+
+.categoria6{
+    background-color: purple;
 }
 
 
