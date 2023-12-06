@@ -3,7 +3,8 @@ body {
     flex-direction: column;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    gap: 16px;
+    gap: 10px;
+    position: static;
 }
 
 body::after {
@@ -54,7 +55,7 @@ main {
 }
 
 #txtBusca{
-    
+
     background-image: url(../img/pesquisar.webp);
     background-repeat: no-repeat;
     background-position: calc(356px - 36px);
@@ -69,7 +70,6 @@ main {
     outline: none;
     padding-left: 10px;
   }
-
 
 
 .categorias{
@@ -89,7 +89,13 @@ main {
 }
 
 .cat{
-    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+    overflow: scroll;
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    padding-left: 20px;
     gap: 10px;
 }
 
@@ -100,6 +106,8 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 6px;
+    scroll-snap-align: start;
+    scroll-padding-left: 20px;
 }
 
 .categoria1{
@@ -162,6 +170,7 @@ main {
     scroll-snap-align: start;
     scroll-padding-left: 20px;
     border-radius: 30px;
+    overflow: hidden;
 }
 
 .myPizzas {
@@ -199,6 +208,7 @@ main {
     gap: 2px;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 
 .preco{
@@ -209,6 +219,7 @@ main {
     text-align: center;
     position: relative;
     top: 3.5rem;
+    
     
 }
 
@@ -221,12 +232,11 @@ main {
 
 .descricao{
     background-color: rgba(0, 0, 0, 0.55);
-    width: 200px;
+    width:200px;
     position: relative;
     top: 3.4rem;
     border-radius: 15px;
 }
-
 
 .pizzaForyou {
     scroll-snap-type: x mandatory;
@@ -263,7 +273,6 @@ main {
     height: 170px;
     flex-direction: column;
     align-items: center;
-    align-content: center;
     justify-items: center;
     gap: 20px;
     display: flex;
@@ -336,7 +345,7 @@ main {
     border-radius: 50px;
     text-align: center;
     position: relative;
-    top: 5rem;
+    top: 3rem;
     left: 15.5rem;
 }
 
@@ -348,21 +357,86 @@ main {
 }
 
 .descricaoBebida p{
-    color: black;
+    color: gray;
     text-shadow: none;
     font-weight: 500;
     font-size: 13px;
     position: relative;
     width: 190px;
     left: 5rem;
-    top: 2rem;
+    top: 1rem;
 }
 
-
+.infoBebida h2{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 2rem;
+    left: 5rem;
+    
+}
 
 
 footer {
     height: 10vh;
     width: 100vw;
-    background-color: green;
+    background-color: #F27706;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: flex-start;
 }
+
+.informacoes{
+    color: white;
+    text-shadow: none;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    width: 80px;
+
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.perfil img{
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    
+}
+
+.bebidas2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bebidas2 img{
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.sobremesas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobremesas img{
+    background-image: url(../img/Kawaii-Cupcake.webp);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+
