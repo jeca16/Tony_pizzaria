@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     gap: 10px;
     position: static;
+    overflow: hidden;
 }
 
 body::after {
@@ -170,7 +171,6 @@ main {
     scroll-snap-align: start;
     scroll-padding-left: 20px;
     border-radius: 30px;
-    overflow: hidden;
 }
 
 .myPizzas {
